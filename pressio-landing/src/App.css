@@ -1,0 +1,112 @@
+:root {
+  --azul-esc: #111844;
+  --azul-med: #4b5694;
+  --azul-cla: #7288ae;
+  --branco: #eae0cf;
+
+  --titulo: "Playfair Display";
+  --subTitulo: "Lato";
+  --texto: "Montserratt"
+}
+
+/* Classes Padronizadas */
+.titulo {
+  font-family: var(--titulo);
+  font-size: 180px;
+  font-style: italic;
+  color: var(--branco);
+  line-height: 190px;
+}
+
+.sub {
+  font-family: var(--subTitulo);
+  font-size: 45px;
+  color: var(--branco);
+}
+
+.titulo-cla {
+  font-family: var(--titulo);
+  font-size: 100px;
+  font-style: italic;
+  color: var(--branco);
+  line-height: 110px;
+  margin-bottom:20px;
+}
+
+.titulo-esc {
+  font-family: var(--titulo);
+  font-size: 100px;
+  font-style: italic;
+  color: var(--azul-esc);
+  line-height: 110px;
+  margin-bottom:20px;
+}
+
+.sub-cla {
+  font-family: var(--subTitulo);
+  font-size: 28px;
+  color: var(--branco);
+}
+
+.sub-esc {
+  font-family: var(--subTitulo);
+  font-size: 28px;
+  color: var(--azul-esc);
+}
+
+.texto-cla {
+  font-family: var(--texto);
+  font-size: 28px;
+  color: var(--branco);
+}
+
+.texto-esc {
+  font-family: var(--texto);
+  font-size: 30px;
+  color: var(--azul-esc);
+}
+
+/* Configs  */
+.introBox {
+  background-image: linear-gradient(to bottom, var(--azul-esc), var(--azul-cla));
+  padding: 40px 60px;
+}
+
+header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+header::after {
+  position: absolute;
+  bottom: -15%;
+  content: "";
+  display: block;
+  width: 60%;
+  height: 5px;
+  background-color: var(--branco);
+  border-radius: 2px;
+}
+
+#desafio {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 23px;
+justify-content: center;
+align-items: center;
+}
+
+.desafioBox {
+  padding: 20px 24px;
+  background-color: var(--azul-med);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.adendo {
+  grid-column: 1 / -1;
+  text-align: center;
+}

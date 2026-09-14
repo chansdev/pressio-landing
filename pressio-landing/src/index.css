@@ -1,0 +1,57 @@
+/* 1. Remove margens e padding de todos os elementos e define box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Suaviza a rolagem da página */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 3. Ajusta o corpo da página para ocupar a tela inteira e melhorar renderização de texto */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Imagens e mídias responsivas por padrão */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Herança de fonte para elementos de formulário */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Remove estilos de botão padrão e adiciona cursor pointer */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* 7. Remove estilo padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 8. Estilo base para links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
